@@ -1,3 +1,5 @@
 .wrapper-menu-cubo {
   color: var(--color-base);
+  font-size: var(--size-medium);
+  text-transform: uppercase;
 }
