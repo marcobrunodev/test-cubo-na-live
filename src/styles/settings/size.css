@@ -1,3 +1,6 @@
 :root {
   --size-medium: 14px;
+
+  --size-radius: 3px;
+  --size-container: 80vw;
 }

@@ -3,3 +3,12 @@
   font-size: var(--size-medium);
   text-transform: uppercase;
 }
+
+.menu-cubo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-cubo > .item:not(:last-child) {
+  margin-right: var(--spacing-medium);
+}
