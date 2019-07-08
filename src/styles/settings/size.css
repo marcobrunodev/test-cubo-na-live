@@ -1,5 +1,6 @@
 :root {
-  --size-medium: 14px;
+  --size-small: 14px;
+  --size-medium: 20px;
   --size-big: 28px;
 
   --size-radius: 3px;
