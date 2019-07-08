@@ -11,7 +11,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Open Sans`,
+            family: `Comfortaa`,
             variants: [`400`, `700`],
           },
         ],

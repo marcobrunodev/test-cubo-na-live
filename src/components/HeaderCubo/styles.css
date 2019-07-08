@@ -1,0 +1,16 @@
+.header-cubo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-small);
+  padding-bottom: var(--spacing-small);
+}
+
+.header-cubo > .logo-cubo {
+  width: 148px;
+}
+
+.header-cubo .button-cubo {
+  width: 82px;
+  height: 35px;
+}

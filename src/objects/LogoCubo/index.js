@@ -2,6 +2,8 @@ import React from "react"
 
 import Logo from "../../images/logo.png"
 
-const LogoCubo = () => <img src={Logo} alt="Logo da Cubo Coworking" />
+const LogoCubo = () => (
+  <img className="logo-cubo" src={Logo} alt="Logo da Cubo Coworking" />
+)
 
 export default LogoCubo
