@@ -6,11 +6,14 @@ import "../styles/generic/reset.css"
 import "../styles/elements/base.css"
 
 import CardCubo from "../objects/CardCubo"
+import TitleCubo from "../objects/TitleCubo"
 import HeaderCubo from "../components/HeaderCubo"
 
 export default () => (
   <>
     <HeaderCubo />
-    <CardCubo />
+    <CardCubo>
+      <TitleCubo content="Lorem ipsum dolor" />
+    </CardCubo>
   </>
 )

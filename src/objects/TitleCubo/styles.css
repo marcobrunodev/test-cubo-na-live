@@ -1,0 +1,5 @@
+.title-cubo {
+  font-size: var(--size-big);
+  color: var(--color-zero);
+  text-transform: uppercase;
+}
