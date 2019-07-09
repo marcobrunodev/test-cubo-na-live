@@ -9,24 +9,38 @@ import BulletCubo from "../../objects/BulletCubo"
 import ArrowCubo from "../../objects/ArrowCubo"
 
 const CarouselCubo = () => (
-  <ol className="carousel-cubo">
-    <li className="left">
-      <ArrowCubo content="Anterior" isActive rightOrLeft="left" />
-    </li>
-    <li className="item">
-      <img className="image" src={ImageFirst} alt="Lorem ipsum dolor" />
+  <div className="wrapper-carousel-cubo">
+    <ol className="carousel-cubo">
+      <li className="left">
+        <ArrowCubo content="Anterior" isActive rightOrLeft="left" />
+      </li>
+      <li className="item">
+        <img className="image" src={ImageFirst} alt="Lorem ipsum dolor" />
 
-      <div className="content container">
-        <CardCubo>
-          <TitleCubo content="Lorem ipsum dolor" />
-          <DescriptionCubo content="Aenean ultrices ultricies vulputate. Donec ut pulvinar ipsum. Maecenas tincidunt lorem at enim pharetra hendrerit vivamus in elemene." />
-        </CardCubo>
-      </div>
-    </li>
-    <li className="right">
-      <ArrowCubo content="Próximo" isActive rightOrLeft="right" />
-    </li>
-  </ol>
+        <div className="content container">
+          <CardCubo>
+            <TitleCubo content="Lorem ipsum dolor" />
+            <DescriptionCubo content="Aenean ultrices ultricies vulputate. Donec ut pulvinar ipsum. Maecenas tincidunt lorem at enim pharetra hendrerit vivamus in elemene." />
+          </CardCubo>
+        </div>
+      </li>
+      <li className="right">
+        <ArrowCubo content="Próximo" isActive rightOrLeft="right" />
+      </li>
+    </ol>
+
+    <ol className="bullets">
+      <li className="bullet">
+        <BulletCubo isActive />
+      </li>
+      <li className="bullet">
+        <BulletCubo />
+      </li>
+      <li className="bullet">
+        <BulletCubo />
+      </li>
+    </ol>
+  </div>
 )
 
 export default CarouselCubo

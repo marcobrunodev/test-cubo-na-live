@@ -1,3 +1,12 @@
+.wrapper-carousel-cubo .bullets {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-carousel-cubo .bullet:not(:last-child) {
+  margin-right: var(--spacing-very-small);
+}
+
 .carousel-cubo {
   position: relative;
 }
