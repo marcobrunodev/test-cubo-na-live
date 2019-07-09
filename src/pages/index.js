@@ -10,6 +10,7 @@ import TitleCubo from "../objects/TitleCubo"
 import DescriptionCubo from "../objects/DescriptionCubo"
 import BulletCubo from "../objects/BulletCubo"
 import HeaderCubo from "../components/HeaderCubo"
+import ArrowCubo from "../objects/ArrowCubo"
 
 export default () => (
   <>
@@ -22,5 +23,8 @@ export default () => (
     <BulletCubo content="Primeiro" isActive />
     <BulletCubo content="Primeiro" />
     <BulletCubo content="Primeiro" />
+
+    <ArrowCubo content="Próximo" isActive rightOrLeft="right" />
+    <ArrowCubo content="Próximo" isActive rightOrLeft="left" />
   </>
 )
