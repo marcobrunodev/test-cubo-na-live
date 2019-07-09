@@ -10,5 +10,5 @@
 }
 
 .menu-cubo > .item:not(:last-child) {
-  margin-right: var(--spacing-medium);
+  margin-right: var(--spacing-big);
 }

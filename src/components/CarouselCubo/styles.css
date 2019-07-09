@@ -1,0 +1,47 @@
+.carousel-cubo {
+  position: relative;
+}
+
+.carousel-cubo .left,
+.carousel-cubo .right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-cubo .left {
+  left: 10vw;
+}
+
+.carousel-cubo .right {
+  right: 10vw;
+}
+
+.carousel-cubo .item {
+  overflow: hidden;
+}
+
+.carousel-cubo .image {
+  width: 100%;
+  float: left;
+}
+
+.carousel-cubo .content {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-cubo .card-cubo {
+  box-sizing: border-box;
+  width: 430px;
+  padding: 38px 26px;
+  position: absolute;
+  top: 170px;
+  left: 100px;
+}
+
+.carousel-cubo .title-cubo {
+  margin-bottom: var(--spacing-medium);
+}
