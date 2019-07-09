@@ -1,0 +1,12 @@
+.bullet-cubo {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px var(--color-fifth) solid;
+  border-radius: 50%;
+  text-indent: -999px;
+}
+
+.bullet-cubo.-active {
+  border-color: var(--color-first);
+}
