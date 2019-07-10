@@ -30,6 +30,11 @@
 
 .carousel-cubo .item {
   overflow: hidden;
+  display: none;
+}
+
+.carousel-cubo .item.-active {
+  display: block;
 }
 
 .carousel-cubo .image {

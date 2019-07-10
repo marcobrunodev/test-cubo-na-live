@@ -11,6 +11,7 @@ import ArrowCubo from "../../objects/ArrowCubo"
 const CarouselCubo = () => {
   const [items, setItems] = useState([
     {
+      id: 0,
       active: true,
       src: ImageFirst,
       alt: "1 - Lorem ipsum dolor",
@@ -19,6 +20,7 @@ const CarouselCubo = () => {
         "Aenean ultrices ultricies vulputate. Donec ut pulvinar ipsum. Maecenas tincidunt lorem at enim pharetra hendrerit vivamus in elemene.",
     },
     {
+      id: 1,
       active: false,
       src: ImageFirst,
       alt: "2 - Lorem ipsum dolor",
@@ -27,6 +29,7 @@ const CarouselCubo = () => {
         "Aenean ultrices ultricies vulputate. Donec ut pulvinar ipsum. Maecenas tincidunt lorem at enim pharetra hendrerit vivamus in elemene.",
     },
     {
+      id: 2,
       active: false,
       src: ImageFirst,
       alt: "3 - Lorem ipsum dolor",
@@ -36,31 +39,42 @@ const CarouselCubo = () => {
     },
   ])
 
+  const handleClickBullet = (event, id) => {
+    event.preventDefault()
+
+    setItems(old => old.map(item => ({ ...item, active: id === item.id })))
+  }
+
   return (
     <div className="wrapper-carousel-cubo">
       <ol className="carousel-cubo">
         <li className="left">
           <ArrowCubo content="Anterior" isActive rightOrLeft="left" />
         </li>
-        <li className="item">
-          <img className="image" src={ImageFirst} alt="Lorem ipsum dolor" />
+        {items.map(({ src, alt, title, description, active }) => (
+          <li className={`item ${active ? "-active" : ""}`}>
+            <img className="image" src={src} alt={alt} />
 
-          <div className="content container">
-            <CardCubo>
-              <TitleCubo content="Lorem ipsum dolor" />
-              <DescriptionCubo content="Aenean ultrices ultricies vulputate. Donec ut pulvinar ipsum. Maecenas tincidunt lorem at enim pharetra hendrerit vivamus in elemene." />
-            </CardCubo>
-          </div>
-        </li>
+            <div className="content container">
+              <CardCubo>
+                <TitleCubo content={title} />
+                <DescriptionCubo content={description} />
+              </CardCubo>
+            </div>
+          </li>
+        ))}
         <li className="right">
           <ArrowCubo content="Próximo" isActive rightOrLeft="right" />
         </li>
       </ol>
 
       <ol className="bullets">
-        {items.map(({ active }) => (
-          <li className="bullet">
-            <BulletCubo isActive={active} />
+        {items.map(({ id, active }) => (
+          <li key={id} className="bullet">
+            <BulletCubo
+              isActive={active}
+              onClick={event => handleClickBullet(event, id)}
+            />
           </li>
         ))}
       </ol>
