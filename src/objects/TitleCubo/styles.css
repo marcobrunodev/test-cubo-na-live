@@ -3,3 +3,7 @@
   color: var(--color-zero);
   text-transform: uppercase;
 }
+
+.title-cubo.-section {
+  color: var(--color-base);
+}

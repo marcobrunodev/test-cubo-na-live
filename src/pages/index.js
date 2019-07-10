@@ -7,10 +7,14 @@ import "../styles/elements/base.css"
 
 import HeaderCubo from "../components/HeaderCubo"
 import CarouselCubo from "../components/CarouselCubo"
+import TitleCubo from "../objects/TitleCubo";
 
 export default () => (
   <>
     <HeaderCubo />
     <CarouselCubo />
+    <section>
+      <TitleCubo content="Serviços" section />
+    </section>
   </>
 )

@@ -1,6 +1,7 @@
 .wrapper-carousel-cubo .bullets {
   display: flex;
   justify-content: center;
+  margin-top: var(--spacing-medium);
 }
 
 .wrapper-carousel-cubo .bullet:not(:last-child) {
