@@ -9,6 +9,8 @@
 
 .carousel-cubo {
   position: relative;
+  height: 600px;
+  overflow: hidden;
 }
 
 .carousel-cubo .left,
@@ -18,6 +20,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  z-index: 5;
 }
 
 .carousel-cubo .left {
@@ -30,11 +33,23 @@
 
 .carousel-cubo .item {
   overflow: hidden;
-  display: none;
+  position: absolute;
+  width: 100vw;
+  opacity: 0;
+  transition: opacity 600ms linear, transform 600ms linear;
+}
+
+.carousel-cubo .item.-left {
+  transform: translateX(-100%) scale(0);
+}
+.carousel-cubo .item.-right {
+  transform: translateX(100%) scale(0);
 }
 
 .carousel-cubo .item.-active {
-  display: block;
+  transition: opacity 500ms linear, transform 400ms linear;
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 .carousel-cubo .image {
