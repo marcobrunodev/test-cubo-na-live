@@ -43,7 +43,7 @@ const CarouselCubo = () => {
     {
       id: 3,
       active: false,
-      position: "none",
+      position: "right",
       src: ImageFirst,
       alt: "4 - Lorem ipsum dolor",
       title: "4 - Lorem ipsum dolor",
@@ -56,22 +56,34 @@ const CarouselCubo = () => {
     event.preventDefault()
 
     setItems(old =>
-      old.map(item => {
-        console.log(`ID do element ${item.id}`, typeof (id - item.id))
-
-        return {
-          ...item,
-          active: id === item.id,
-          position: id - item.id < 0 ? "right" : "left",
-        }
-      })
+      old.map(item => ({
+        ...item,
+        active: id === item.id,
+        position: id - item.id < 0 ? "right" : "left",
+      }))
     )
+  }
+
+  const handleClickArrow = arrow => {
+    setItems(old => {
+      const active = old.find(item => item.active)
+      const length = old.length
+      const offset = arrow === "left" ? -1 : 1
+      const next = (active.id + offset) % length
+      const nextActive = next < 0 ? length - 1 : next
+
+      return old.map(item => ({
+        ...item,
+        active: nextActive === item.id,
+        position: nextActive - item.id < 0 ? "right" : "left",
+      }))
+    })
   }
 
   return (
     <div className="wrapper-carousel-cubo">
       <ol className="carousel-cubo">
-        <li className="left">
+        <li className="left" onClick={() => handleClickArrow("left")}>
           <ArrowCubo content="Anterior" isActive rightOrLeft="left" />
         </li>
         {items.map(({ src, alt, title, description, active, position }) => (
@@ -86,7 +98,7 @@ const CarouselCubo = () => {
             </div>
           </li>
         ))}
-        <li className="right">
+        <li className="right" onClick={() => handleClickArrow("right")}>
           <ArrowCubo content="Próximo" isActive rightOrLeft="right" />
         </li>
       </ol>

@@ -40,14 +40,14 @@
 }
 
 .carousel-cubo .item.-left {
-  transform: translateX(-100%) scale(0);
+  transform: translateX(-100%) scale(0.8);
 }
 .carousel-cubo .item.-right {
-  transform: translateX(100%) scale(0);
+  transform: translateX(100%) scale(0.8);
 }
 
 .carousel-cubo .item.-active {
-  transition: opacity 500ms linear, transform 400ms linear;
+  transition: opacity 600ms linear, transform 600ms linear;
   transform: translateX(0%);
   opacity: 1;
 }

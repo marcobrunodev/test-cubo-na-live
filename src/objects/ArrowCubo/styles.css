@@ -7,6 +7,7 @@
   border-left-color: transparent;
   transform: rotate(45deg);
   text-indent: -9999px;
+  outline: none;
 }
 
 .arrow-cubo:hover {
