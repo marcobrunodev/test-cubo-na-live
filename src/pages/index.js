@@ -51,7 +51,7 @@ export default () => (
   <>
     <HeaderCubo />
     <CarouselCubo />
-    <SectionCubo>
+    <SectionCubo className="container">
       <HeaderSection />
 
       {services.map(({ src, alt, title, description }) => (

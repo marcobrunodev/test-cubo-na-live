@@ -11,6 +11,7 @@
 }
 
 .service-cubo > .description {
+  overflow: hidden;
   font-size: var(--size-small);
   color: var(--color-seven);
 }

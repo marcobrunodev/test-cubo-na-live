@@ -1,3 +1,12 @@
 .section-cubo {
   padding-top: var(--spacing-very-big);
+  padding-bottom: var(--spacing-very-big);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--spacing-big);
+}
+
+.section-cubo > .header-section {
+  grid-column: span 2;
 }
