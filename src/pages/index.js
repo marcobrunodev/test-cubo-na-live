@@ -11,6 +11,8 @@ import "../styles/generic/reset.css"
 import "../styles/elements/base.css"
 
 import SectionCubo from "../objects/SectionCubo"
+import TitleCubo from "../objects/TitleCubo"
+import TextCubo from "../objects/TextCubo"
 import HeaderCubo from "../components/HeaderCubo"
 import CarouselCubo from "../components/CarouselCubo"
 import HeaderSection from "../components/HeaderSection"
@@ -51,7 +53,7 @@ export default () => (
   <>
     <HeaderCubo />
     <CarouselCubo />
-    <SectionCubo className="container">
+    <SectionCubo className="container -service">
       <HeaderSection />
 
       {services.map(({ src, alt, title, description }) => (
@@ -62,6 +64,14 @@ export default () => (
           description={description}
         />
       ))}
+    </SectionCubo>
+
+    <SectionCubo className="-about">
+      <TitleCubo content="Sobre nós" />
+      <TextCubo
+        content="In sit amet mi sollicitudin, maximus risus sed, eleifend turpis. Ut aliquet fermentum leo eu vestibulum. Aliquam vitae iaculis neque. Proin vitae quam ac lectus fermentum viverra. Vestibulum eu sem lobortis, rhoncus purus in, mattis augue. Proin nec tempor ipsum. Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend.In sit amet mi sollicitudin, maximus risus sed, eleifend turpis. Ut aliquet fermentum leo eu vestibulum. Aliquam vitae iaculis neque. Proin vitae quam ac lectus fermentum viverra. Vestibulum eu sem lobortis, rhoncus purus in, mattis augue. 
+ Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend."
+      />
     </SectionCubo>
   </>
 )

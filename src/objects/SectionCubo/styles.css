@@ -1,12 +1,19 @@
 .section-cubo {
   padding-top: var(--spacing-very-big);
   padding-bottom: var(--spacing-very-big);
+}
+
+.section-cubo.-service {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--spacing-big);
 }
 
-.section-cubo > .header-section {
+.section-cubo.-service > .header-section {
   grid-column: span 2;
+}
+
+.section-cubo.-about {
+  background-color: var(--color-second);
 }
