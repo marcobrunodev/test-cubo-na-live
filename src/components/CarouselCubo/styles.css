@@ -1,0 +1,77 @@
+.wrapper-carousel-cubo .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-medium);
+}
+
+.wrapper-carousel-cubo .bullet:not(:last-child) {
+  margin-right: var(--spacing-very-small);
+}
+
+.carousel-cubo {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-cubo .left,
+.carousel-cubo .right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.carousel-cubo .left {
+  left: 10vw;
+}
+
+.carousel-cubo .right {
+  right: 10vw;
+}
+
+.carousel-cubo .item {
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  opacity: 0;
+  transition: opacity 600ms linear, transform 600ms linear;
+}
+
+.carousel-cubo .item.-left {
+  transform: translateX(-100%) scale(0.8);
+}
+.carousel-cubo .item.-right {
+  transform: translateX(100%) scale(0.8);
+}
+
+.carousel-cubo .item.-active {
+  transition: opacity 600ms linear, transform 600ms linear;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.carousel-cubo .image {
+  width: 100%;
+  float: left;
+}
+
+.carousel-cubo .content {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-cubo .card-cubo {
+  box-sizing: border-box;
+  width: 430px;
+  padding: 38px 26px;
+  position: absolute;
+  top: 170px;
+  left: 100px;
+}
+
+.carousel-cubo .title-cubo {
+  margin-bottom: var(--spacing-medium);
+}
