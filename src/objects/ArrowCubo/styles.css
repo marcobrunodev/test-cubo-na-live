@@ -1,0 +1,24 @@
+.arrow-cubo {
+  width: 24px;
+  height: 24px;
+  display: none;
+  border: 4px var(--color-fifth) solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  text-indent: -9999px;
+  outline: none;
+}
+
+.arrow-cubo:hover {
+  border-top-color: var(--color-first);
+  border-right-color: var(--color-first);
+}
+
+.arrow-cubo.-active {
+  display: block;
+}
+
+.arrow-cubo.-left {
+  transform: rotate(-135deg);
+}

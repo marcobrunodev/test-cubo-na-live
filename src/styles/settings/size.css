@@ -1,5 +1,8 @@
 :root {
-  --size-medium: 14px;
+  --size-small: 14px;
+  --size-small-medium: 18px;
+  --size-medium: 20px;
+  --size-big: 28px;
 
   --size-radius: 3px;
   --size-container: 80vw;

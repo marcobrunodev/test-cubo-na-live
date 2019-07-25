@@ -1,0 +1,17 @@
+.service-cubo > .icon {
+  float: left;
+  margin-right: var(--spacing-small);
+}
+
+.service-cubo > .title {
+  font-size: var(--size-medium);
+  color: var(--color-sixth);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-small);
+}
+
+.service-cubo > .description {
+  overflow: hidden;
+  font-size: var(--size-small);
+  color: var(--color-seven);
+}
