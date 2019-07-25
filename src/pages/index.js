@@ -17,6 +17,7 @@ import HeaderCubo from "../components/HeaderCubo"
 import CarouselCubo from "../components/CarouselCubo"
 import HeaderSection from "../components/HeaderSection"
 import ServiceCubo from "../components/ServiceCubo"
+import DonutChart from "../components/DonutChart"
 
 const services = [
   {
@@ -72,6 +73,8 @@ export default () => (
         content="In sit amet mi sollicitudin, maximus risus sed, eleifend turpis. Ut aliquet fermentum leo eu vestibulum. Aliquam vitae iaculis neque. Proin vitae quam ac lectus fermentum viverra. Vestibulum eu sem lobortis, rhoncus purus in, mattis augue. Proin nec tempor ipsum. Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend.In sit amet mi sollicitudin, maximus risus sed, eleifend turpis. Ut aliquet fermentum leo eu vestibulum. Aliquam vitae iaculis neque. Proin vitae quam ac lectus fermentum viverra. Vestibulum eu sem lobortis, rhoncus purus in, mattis augue. 
  Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend."
       />
+
+      <DonutChart value="18%" title="Percentual" />
     </SectionCubo>
   </>
 )
