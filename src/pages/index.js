@@ -71,10 +71,14 @@ export default () => (
       <TitleCubo content="Sobre nós" />
       <TextCubo
         content="In sit amet mi sollicitudin, maximus risus sed, eleifend turpis. Ut aliquet fermentum leo eu vestibulum. Aliquam vitae iaculis neque. Proin vitae quam ac lectus fermentum viverra. Vestibulum eu sem lobortis, rhoncus purus in, mattis augue. Proin nec tempor ipsum. Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend.In sit amet mi sollicitudin, maximus risus sed, eleifend turpis. Ut aliquet fermentum leo eu vestibulum. Aliquam vitae iaculis neque. Proin vitae quam ac lectus fermentum viverra. Vestibulum eu sem lobortis, rhoncus purus in, mattis augue. 
- Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend."
+Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mattis tincidunt eleifend."
       />
 
-      <DonutChart value="18%" title="Percentual" />
+      <div className="wrapper-donut-chart">
+        <DonutChart slice="1" value="18%" title="Percentual" />
+        <DonutChart slice="2" value="12:00" title="Hora" />
+        <DonutChart slice="3" value="R$350" title="Valor" />
+      </div>
     </SectionCubo>
   </>
 )

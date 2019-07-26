@@ -12,10 +12,24 @@
   width: 140px;
   height: 140px;
   border: 6px solid var(--color-zero);
-  border-top-color: var(--color-base);
   border-radius: 50%;
   transform: rotate(45deg);
   margin-bottom: var(--spacing-medium);
+}
+.donut-chart > .value.-one-quarter {
+  border-top-color: var(--color-base);
+}
+.donut-chart > .value.-half {
+  border-top-color: var(--color-base);
+  border-right-color: var(--color-base);
+}
+.donut-chart > .value.-three-quarter {
+  border-top-color: var(--color-base);
+  border-right-color: var(--color-base);
+  border-bottom-color: var(--color-base);
+}
+.donut-chart > .value.-full {
+  border-color: var(--color-base);
 }
 
 .donut-chart .content {
