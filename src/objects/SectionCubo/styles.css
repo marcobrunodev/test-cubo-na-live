@@ -15,5 +15,24 @@
 }
 
 .section-cubo.-about {
+  background-image: url("/about.png");
+  background-repeat: no-repeat;
   background-color: var(--color-second);
+  background-size: 50vw;
+  padding-left: calc(50vw + var(--spacing-big));
+}
+
+.section-cubo.-about > .title-cubo {
+  margin-bottom: var(--spacing-big);
+}
+
+.section-cubo.-about > .text-cubo {
+  padding-right: 10vw;
+  margin-bottom: var(--spacing-big);
+}
+
+.section-cubo.-about > .wrapper-donut-chart {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10vw;
 }
