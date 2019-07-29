@@ -18,6 +18,7 @@ import CarouselCubo from "../components/CarouselCubo"
 import HeaderSection from "../components/HeaderSection"
 import ServiceCubo from "../components/ServiceCubo"
 import DonutChart from "../components/DonutChart"
+import FeatureCubo from "../components/FeatureCubo"
 
 const services = [
   {
@@ -79,6 +80,15 @@ Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mat
         <DonutChart slice="2" value="12:00" title="Hora" />
         <DonutChart slice="3" value="R$350" title="Valor" />
       </div>
+    </SectionCubo>
+
+    <SectionCubo>
+      <TitleCubo content="Como funciona?" section />
+
+      <FeatureCubo />
+      <FeatureCubo />
+      <FeatureCubo />
+      <FeatureCubo />
     </SectionCubo>
   </>
 )

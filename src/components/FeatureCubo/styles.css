@@ -1,0 +1,11 @@
+.feature-cubo > .title {
+  font-size: var(--size-medium);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-base);
+}
+
+.feature-cubo > .description {
+  color: var(--color-eighth);
+  font-size: var(--size-small);
+}
