@@ -1,8 +1,13 @@
+.feature-cubo > .icon {
+  margin-bottom: var(--spacing-big);
+}
+
 .feature-cubo > .title {
   font-size: var(--size-medium);
   font-weight: bold;
   text-transform: uppercase;
   color: var(--color-base);
+  margin-bottom: var(--spacing-small);
 }
 
 .feature-cubo > .description {

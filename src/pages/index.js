@@ -10,6 +10,11 @@ import "../styles/tools/tricks.css"
 import "../styles/generic/reset.css"
 import "../styles/elements/base.css"
 
+import World from "../images/world.png"
+import Cart from "../images/cart.png"
+import Like from "../images/like.png"
+import Delivery from "../images/delivery.png"
+
 import SectionCubo from "../objects/SectionCubo"
 import TitleCubo from "../objects/TitleCubo"
 import TextCubo from "../objects/TextCubo"
@@ -82,13 +87,47 @@ Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mat
       </div>
     </SectionCubo>
 
-    <SectionCubo>
+    <SectionCubo className="-work container">
       <TitleCubo content="Como funciona?" section />
 
-      <FeatureCubo />
-      <FeatureCubo />
-      <FeatureCubo />
-      <FeatureCubo />
+      <ol class="wrapper">
+        <li>
+          <FeatureCubo
+            icon={World}
+            altIcon="Ícone de um globo"
+            title="Passo 1"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+        <li>
+          <FeatureCubo
+            icon={Cart}
+            altIcon="Ícone de um carrinho de compras"
+            title="Passo 2"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+        <li>
+          <FeatureCubo
+            icon={Like}
+            altIcon="Ícone de um Like"
+            title="Passo 3"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+        <li>
+          <FeatureCubo
+            icon={Delivery}
+            altIcon="Ícone de um entrega"
+            title="Passo 4"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+      </ol>
     </SectionCubo>
   </>
 )

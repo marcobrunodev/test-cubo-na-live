@@ -1,17 +1,13 @@
 import React from "react"
 import "./styles.css"
-import World from "../../images/world.png"
 
-const FeatureCubo = () => (
+const FeatureCubo = ({ icon, altIcon, title, description }) => (
   <dl className="feature-cubo">
     <dd className="icon">
-      <img src={World} alt="Ícone do mundo" />
+      <img src={icon} alt={altIcon} />
     </dd>
-    <dt className="title">Passo 1</dt>
-    <dd className="description">
-      Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna,
-      ut dignissim ligula est at erat.
-    </dd>
+    <dt className="title">{title}</dt>
+    <dd className="description">{description}</dd>
   </dl>
 )
 

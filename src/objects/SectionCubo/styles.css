@@ -36,3 +36,18 @@
   justify-content: space-between;
   padding-right: 10vw;
 }
+
+.section-cubo.-work > .title-cubo {
+  text-align: center;
+  margin-bottom: var(--spacing-big);
+}
+
+.section-cubo.-work > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-cubo.-work .feature-cubo {
+  width: 225px;
+}
