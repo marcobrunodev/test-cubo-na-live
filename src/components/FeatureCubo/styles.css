@@ -2,6 +2,11 @@
   margin-bottom: var(--spacing-big);
 }
 
+.feature-cubo > .icon > img {
+  fill: var(--color-nineth);
+  color: var(--color-nineth);
+}
+
 .feature-cubo > .title {
   font-size: var(--size-medium);
   font-weight: bold;

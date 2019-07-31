@@ -24,6 +24,7 @@ import HeaderSection from "../components/HeaderSection"
 import ServiceCubo from "../components/ServiceCubo"
 import DonutChart from "../components/DonutChart"
 import FeatureCubo from "../components/FeatureCubo"
+import ButtonCubo from "../components/ButtonCubo";
 
 const services = [
   {
@@ -128,6 +129,8 @@ ut dignissim ligula est at erat."
           />
         </li>
       </ol>
+
+      <ButtonCubo content="Leia mais" className="-second" />
     </SectionCubo>
   </>
 )

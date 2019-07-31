@@ -4,4 +4,9 @@
   color: var(--color-zero);
   border-radius: var(--size-radius);
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button-cubo.-second {
+  background-color: var(--color-third);
 }
