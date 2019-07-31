@@ -9,6 +9,7 @@
 
 .header-section > .title-cubo {
   margin-bottom: var(--spacing-medium);
+  color: inherit;
 }
 
 .header-section > .subtitle-cubo {
