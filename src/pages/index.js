@@ -62,7 +62,7 @@ export default () => (
     <HeaderCubo />
     <CarouselCubo />
     <SectionCubo className="container -service">
-      <HeaderSection />
+      <HeaderSection title="Serviços" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
 
       {services.map(({ src, alt, title, description }) => (
         <ServiceCubo
@@ -133,5 +133,9 @@ ut dignissim ligula est at erat."
 
       <ButtonCubo content="Leia mais" className="-second" />
     </SectionCubo>
+  
+    <SectionCubo className="-signup">
+        <HeaderSection className="-light" title="Cadastre-se" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+    </SectionCubo> 
   </>
 )
