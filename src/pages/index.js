@@ -25,6 +25,7 @@ import ServiceCubo from "../components/ServiceCubo"
 import DonutChart from "../components/DonutChart"
 import FeatureCubo from "../components/FeatureCubo"
 import ButtonCubo from "../components/ButtonCubo";
+import InputCubo from "../objects/InputCubo";
 
 const services = [
   {
@@ -136,6 +137,10 @@ ut dignissim ligula est at erat."
   
     <SectionCubo className="-signup">
         <HeaderSection className="-light" title="Cadastre-se" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+
+        <form>
+          <InputCubo />
+        </form>
     </SectionCubo> 
   </>
 )
