@@ -92,7 +92,7 @@ Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mat
       <TitleCubo content="Como funciona?" section />
 
       <ol class="wrapper">
-        <li>
+        <li className="item">
           <FeatureCubo
             icon={World}
             altIcon="Ícone de um globo"
@@ -101,7 +101,7 @@ Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mat
 ut dignissim ligula est at erat."
           />
         </li>
-        <li>
+        <li className="item">
           <FeatureCubo
             icon={Cart}
             altIcon="Ícone de um carrinho de compras"
@@ -110,7 +110,7 @@ ut dignissim ligula est at erat."
 ut dignissim ligula est at erat."
           />
         </li>
-        <li>
+        <li className="item">
           <FeatureCubo
             icon={Like}
             altIcon="Ícone de um Like"
@@ -119,13 +119,14 @@ ut dignissim ligula est at erat."
 ut dignissim ligula est at erat."
           />
         </li>
-        <li>
+        <li className="item">
           <FeatureCubo
             icon={Delivery}
             altIcon="Ícone de um entrega"
             title="Passo 4"
             description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
 ut dignissim ligula est at erat."
+            className="last"
           />
         </li>
       </ol>
