@@ -1,0 +1,21 @@
+.feature-cubo > .icon {
+  margin-bottom: var(--spacing-big);
+}
+
+.feature-cubo > .icon > img {
+  fill: var(--color-nineth);
+  color: var(--color-nineth);
+}
+
+.feature-cubo > .title {
+  font-size: var(--size-medium);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-base);
+  margin-bottom: var(--spacing-small);
+}
+
+.feature-cubo > .description {
+  color: var(--color-eighth);
+  font-size: var(--size-small);
+}

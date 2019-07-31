@@ -10,6 +10,11 @@ import "../styles/tools/tricks.css"
 import "../styles/generic/reset.css"
 import "../styles/elements/base.css"
 
+import World from "../images/world.png"
+import Cart from "../images/cart.png"
+import Like from "../images/like.png"
+import Delivery from "../images/delivery.png"
+
 import SectionCubo from "../objects/SectionCubo"
 import TitleCubo from "../objects/TitleCubo"
 import TextCubo from "../objects/TextCubo"
@@ -18,6 +23,8 @@ import CarouselCubo from "../components/CarouselCubo"
 import HeaderSection from "../components/HeaderSection"
 import ServiceCubo from "../components/ServiceCubo"
 import DonutChart from "../components/DonutChart"
+import FeatureCubo from "../components/FeatureCubo"
+import ButtonCubo from "../components/ButtonCubo";
 
 const services = [
   {
@@ -79,6 +86,52 @@ Sed eu libero at arcu dictum rhoncus. Vestibulum at tempus felis. Vestibulum mat
         <DonutChart slice="2" value="12:00" title="Hora" />
         <DonutChart slice="3" value="R$350" title="Valor" />
       </div>
+    </SectionCubo>
+
+    <SectionCubo className="-work container">
+      <TitleCubo content="Como funciona?" section />
+
+      <ol class="wrapper">
+        <li className="item">
+          <FeatureCubo
+            icon={World}
+            altIcon="Ícone de um globo"
+            title="Passo 1"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+        <li className="item">
+          <FeatureCubo
+            icon={Cart}
+            altIcon="Ícone de um carrinho de compras"
+            title="Passo 2"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+        <li className="item">
+          <FeatureCubo
+            icon={Like}
+            altIcon="Ícone de um Like"
+            title="Passo 3"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+          />
+        </li>
+        <li className="item">
+          <FeatureCubo
+            icon={Delivery}
+            altIcon="Ícone de um entrega"
+            title="Passo 4"
+            description="Donec posuere, libero in tincidunt consectetur, velit diam lacinia magna, 
+ut dignissim ligula est at erat."
+            className="last"
+          />
+        </li>
+      </ol>
+
+      <ButtonCubo content="Leia mais" className="-second" />
     </SectionCubo>
   </>
 )

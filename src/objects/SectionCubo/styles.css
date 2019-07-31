@@ -36,3 +36,46 @@
   justify-content: space-between;
   padding-right: 10vw;
 }
+
+.section-cubo.-work > .title-cubo {
+  text-align: center;
+  margin-bottom: var(--spacing-very-big);
+}
+
+.section-cubo.-work > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-very-big);
+}
+
+.section-cubo.-work .item {
+  position: relative;
+}
+
+.section-cubo.-work .item:not(:last-child)::after {
+  content: url('/arrow.png');
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(140%);
+}
+
+.section-cubo.-work .item:nth-child(even)::after {
+  transform: translate(140%, 270%) rotate(180deg);
+}
+
+.section-cubo.-work .feature-cubo {
+  width: 225px;
+  text-align: center;
+}
+
+
+.section-cubo > .button-cubo {
+  width: 150px;
+  height: 50px;
+  font-size: var(--size-medium);
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
