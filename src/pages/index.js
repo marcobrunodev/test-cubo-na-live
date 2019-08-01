@@ -15,11 +15,14 @@ import Cart from "../images/cart.png"
 import Like from "../images/like.png"
 import Delivery from "../images/delivery.png"
 
-import SectionCubo from "../objects/SectionCubo"
-import TitleCubo from "../objects/TitleCubo"
-import TextCubo from "../objects/TextCubo"
-import InputCubo from "../objects/InputCubo"
-import FormCubo from "../objects/FormCubo"
+import {
+  SectionCubo,
+  TitleCubo,
+  TextCubo,
+  InputCubo,
+  FormCubo,
+} from './../objects'
+
 
 import {
   HeaderCubo,
@@ -156,6 +159,33 @@ ut dignissim ligula est at erat."
 
         <ButtonCubo type="submit" className="-light" content="Enviar" />
       </FormCubo>
+    </SectionCubo>
+
+    <SectionCubo className="-data">
+      <HeaderSection
+        title="Dados"
+        subtitle="Dados
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Participação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>Carlos</td>
+            <td>Moura</td>
+            <td>5%</td>
+          </tr>
+        </tbody>
+      </table>
     </SectionCubo>
   </>
 )
