@@ -82,3 +82,15 @@
 .section-cubo.-signup {
   background-color: var(--color-fourth);
 }
+
+.section-cubo.-signup .input-cubo {
+  width: 300px;
+  height: 55px;
+}
+
+.section-cubo.-signup .button-cubo {
+  width: 150px;
+  height: 55px;
+  font-size: var(--size-medium);
+  font-weight: bold;
+}

@@ -139,7 +139,11 @@ ut dignissim ligula est at erat."
         <HeaderSection className="-light" title="Cadastre-se" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
 
         <form>
-          <InputCubo />
+          <InputCubo placeholder="Nome" className="-user"/>
+          <InputCubo placeholder="Email" className="-email" />
+          <InputCubo placeholder="Telefone" className="-phone" />
+
+          <ButtonCubo type="submit" className="-light" content="Enviar" />
         </form>
     </SectionCubo> 
   </>
