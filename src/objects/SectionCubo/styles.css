@@ -83,6 +83,11 @@
   background-color: var(--color-fourth);
 }
 
+.section-cubo.-signup > .form-cubo {
+  display: flex;
+  justify-content: center;
+}
+
 .section-cubo.-signup .input-cubo {
   width: 300px;
   height: 55px;

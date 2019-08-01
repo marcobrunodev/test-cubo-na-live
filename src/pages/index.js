@@ -18,6 +18,8 @@ import Delivery from "../images/delivery.png"
 import SectionCubo from "../objects/SectionCubo"
 import TitleCubo from "../objects/TitleCubo"
 import TextCubo from "../objects/TextCubo"
+import InputCubo from "../objects/InputCubo";
+import FormCubo from "../objects/FormCubo";
 import HeaderCubo from "../components/HeaderCubo"
 import CarouselCubo from "../components/CarouselCubo"
 import HeaderSection from "../components/HeaderSection"
@@ -25,7 +27,6 @@ import ServiceCubo from "../components/ServiceCubo"
 import DonutChart from "../components/DonutChart"
 import FeatureCubo from "../components/FeatureCubo"
 import ButtonCubo from "../components/ButtonCubo";
-import InputCubo from "../objects/InputCubo";
 
 const services = [
   {
@@ -138,13 +139,13 @@ ut dignissim ligula est at erat."
     <SectionCubo className="-signup">
         <HeaderSection className="-light" title="Cadastre-se" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
 
-        <form>
+        <FormCubo>
           <InputCubo placeholder="Nome" className="-user"/>
           <InputCubo placeholder="Email" className="-email" />
           <InputCubo placeholder="Telefone" className="-phone" />
 
           <ButtonCubo type="submit" className="-light" content="Enviar" />
-        </form>
+        </FormCubo>
     </SectionCubo> 
   </>
 )
