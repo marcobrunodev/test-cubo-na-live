@@ -18,15 +18,18 @@ import Delivery from "../images/delivery.png"
 import SectionCubo from "../objects/SectionCubo"
 import TitleCubo from "../objects/TitleCubo"
 import TextCubo from "../objects/TextCubo"
-import InputCubo from "../objects/InputCubo";
-import FormCubo from "../objects/FormCubo";
-import HeaderCubo from "../components/HeaderCubo"
-import CarouselCubo from "../components/CarouselCubo"
-import HeaderSection from "../components/HeaderSection"
-import ServiceCubo from "../components/ServiceCubo"
-import DonutChart from "../components/DonutChart"
-import FeatureCubo from "../components/FeatureCubo"
-import ButtonCubo from "../components/ButtonCubo";
+import InputCubo from "../objects/InputCubo"
+import FormCubo from "../objects/FormCubo"
+
+import {
+  HeaderCubo,
+  CarouselCubo,
+  HeaderSection,
+  ServiceCubo,
+  DonutChart,
+  FeatureCubo,
+  ButtonCubo,
+} from "../components"
 
 const services = [
   {
@@ -64,7 +67,10 @@ export default () => (
     <HeaderCubo />
     <CarouselCubo />
     <SectionCubo className="container -service">
-      <HeaderSection title="Serviços" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+      <HeaderSection
+        title="Serviços"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      />
 
       {services.map(({ src, alt, title, description }) => (
         <ServiceCubo
@@ -135,17 +141,21 @@ ut dignissim ligula est at erat."
 
       <ButtonCubo content="Leia mais" className="-second" />
     </SectionCubo>
-  
+
     <SectionCubo className="-signup">
-        <HeaderSection className="-light" title="Cadastre-se" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+      <HeaderSection
+        className="-light"
+        title="Cadastre-se"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      />
 
-        <FormCubo>
-          <InputCubo placeholder="Nome" className="-user"/>
-          <InputCubo placeholder="Email" className="-email" />
-          <InputCubo placeholder="Telefone" className="-phone" />
+      <FormCubo>
+        <InputCubo placeholder="Nome" className="-user" />
+        <InputCubo placeholder="Email" className="-email" />
+        <InputCubo placeholder="Telefone" className="-phone" />
 
-          <ButtonCubo type="submit" className="-light" content="Enviar" />
-        </FormCubo>
-    </SectionCubo> 
+        <ButtonCubo type="submit" className="-light" content="Enviar" />
+      </FormCubo>
+    </SectionCubo>
   </>
 )
