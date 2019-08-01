@@ -1,5 +1,6 @@
 .button-cubo {
   display: block;
+  box-sizing: border-box;
   background-color: var(--color-first);
   color: var(--color-zero);
   border-radius: var(--size-radius);
@@ -9,4 +10,9 @@
 
 .button-cubo.-second {
   background-color: var(--color-third);
+}
+
+.button-cubo.-light {
+  background-color: transparent;
+  border: 1px solid var(--color-zero);
 }

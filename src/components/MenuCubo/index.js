@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./styles.css"
-import ButtonCubo from "../ButtonCubo"
+import { ButtonCubo } from "../ButtonCubo"
 
 const MenuCubo = () => (
   <nav className="wrapper-menu-cubo">

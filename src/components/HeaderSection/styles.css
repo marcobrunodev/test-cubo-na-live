@@ -1,7 +1,17 @@
 .header-section {
   text-align: center;
+  color: var(--color-base);
+}
+
+.header-section.-light {
+  color: var(--color-zero);
 }
 
 .header-section > .title-cubo {
   margin-bottom: var(--spacing-medium);
+  color: inherit;
+}
+
+.header-section > .subtitle-cubo {
+  color: inherit;
 }

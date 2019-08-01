@@ -1,0 +1,19 @@
+.input-cubo {
+    border-radius: 4px;
+    color: var(--color-eighth);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+}
+
+.input-cubo.-user {
+    background-image: url('/user.png');
+}
+
+.input-cubo.-email {
+    background-image: url('/email.png');
+}
+
+.input-cubo.-phone {
+    background-image: url('/phone.png');
+}
