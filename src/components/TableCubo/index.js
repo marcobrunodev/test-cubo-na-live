@@ -8,9 +8,14 @@ const TableCubo = ({ head, body }) => (
             </tr>
         </thead>
         <tbody className="body">
-            <tr>
-                {body.map(td => <td>{td}</td>)}
-            </tr>
+            {body.map(({ id, name, lastName, participation }) => (
+                <tr>
+                    <td>{id}</td>
+                    <td>{name}</td>
+                    <td>{lastName}</td>
+                    <td>{participation}</td>
+                </tr>
+            ))}
         </tbody>
     </table>
 );

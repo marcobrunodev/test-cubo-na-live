@@ -32,6 +32,7 @@ import {
   DonutChart,
   FeatureCubo,
   ButtonCubo,
+  TableCubo,
 } from "../components"
 
 const services = [
@@ -64,6 +65,41 @@ const services = [
       "Donec sit amet erat ut quam dignissim bibendum porta enim, ut acor tempor felis diam non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
   },
 ]
+
+const datas = {
+  head : ["", "Nome", "Sobrenome", "Participação"],
+  body: [{
+    id: 1,
+    name: "Carlos",
+    lastName: "Moura",
+    participation: "5%",
+  },
+  {
+    id: 2,
+    name: "Fernanda", 
+    lastName: "Oliveria", 
+    participation: "15%",
+  },
+  {
+    id: 3,
+    name: "Hugo", 
+    lastName: "Silva",
+    participation: "20%",
+  },
+  {
+    id: 4,
+    name: "Eliza",
+    lastName: "Souza",
+    paritcipation: "20%",
+  },
+  {
+    id: 5,
+    name: "Anderson",
+    lastName: "Santos",
+    participation: "40%",
+  },
+]
+}
 
 export default () => (
   <>
@@ -168,24 +204,7 @@ ut dignissim ligula est at erat."
         Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
 
-      <table>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Sobrenome</th>
-            <th>Participação</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0</td>
-            <td>Carlos</td>
-            <td>Moura</td>
-            <td>5%</td>
-          </tr>
-        </tbody>
-      </table>
+      <TableCubo head={datas.head} body={datas.body} />
     </SectionCubo>
   </>
 )
