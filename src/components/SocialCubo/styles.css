@@ -1,0 +1,17 @@
+.social-cubo {
+  display: flex;
+}
+
+.social-cubo > .social {
+  width: 50px;
+  height: 50px;
+}
+
+.social-cubo > .social:not(:last-child) {
+  margin-right: var(--spacing-medium);
+}
+
+.social-cubo .icon-social {
+  width: 100%;
+  height: 100%;
+}

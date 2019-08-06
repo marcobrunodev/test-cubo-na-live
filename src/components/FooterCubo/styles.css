@@ -1,0 +1,20 @@
+.footer-cubo {
+  padding-top: var(--spacing-medium);
+  border-top: 1px solid var(--color-seventh);
+}
+
+.footer-cubo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium) 0;
+}
+
+.footer-cubo .text-cubo {
+  color: var(--color-seventh);
+  font-size: var(--size-small);
+}
+
+.footer-cubo > .copyright-cubo {
+  padding: var(--spacing-medium) 0;
+}
