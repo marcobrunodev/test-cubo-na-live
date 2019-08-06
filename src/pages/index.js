@@ -32,6 +32,7 @@ import {
   FeatureCubo,
   ButtonCubo,
   TableCubo,
+  FooterCubo,
 } from "../components"
 
 const services = [
@@ -90,7 +91,7 @@ const datas = {
       id: 4,
       name: "Eliza",
       lastName: "Souza",
-      paritcipation: "20%",
+      participation: "20%",
     },
     {
       id: 5,
@@ -208,5 +209,7 @@ ut dignissim ligula est at erat."
         <TableCubo head={datas.head} body={datas.body} />
       </div>
     </SectionCubo>
+
+    <FooterCubo />
   </>
 )
