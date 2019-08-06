@@ -54,7 +54,7 @@
 }
 
 .section-cubo.-work .item:not(:last-child)::after {
-  content: url('/arrow.png');
+  content: url("/arrow.png");
   position: absolute;
   right: 0;
   top: 0;
@@ -103,4 +103,16 @@
   height: 55px;
   font-size: var(--size-medium);
   font-weight: bold;
+}
+
+.section-cubo.-data > .header-section {
+  margin-bottom: var(--spacing-very-big);
+}
+
+.section-cubo.-data .table-cubo {
+  width: 535px;
+}
+
+.section-cubo.-data .data {
+  padding: var(--spacing-very-small);
 }

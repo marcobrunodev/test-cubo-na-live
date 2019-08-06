@@ -15,11 +15,13 @@ import Cart from "../images/cart.png"
 import Like from "../images/like.png"
 import Delivery from "../images/delivery.png"
 
-import SectionCubo from "../objects/SectionCubo"
-import TitleCubo from "../objects/TitleCubo"
-import TextCubo from "../objects/TextCubo"
-import InputCubo from "../objects/InputCubo"
-import FormCubo from "../objects/FormCubo"
+import {
+  SectionCubo,
+  TitleCubo,
+  TextCubo,
+  InputCubo,
+  FormCubo,
+} from "./../objects"
 
 import {
   HeaderCubo,
@@ -29,6 +31,7 @@ import {
   DonutChart,
   FeatureCubo,
   ButtonCubo,
+  TableCubo,
 } from "../components"
 
 const services = [
@@ -61,6 +64,42 @@ const services = [
       "Donec sit amet erat ut quam dignissim bibendum porta enim, ut acor tempor felis diam non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
   },
 ]
+
+const datas = {
+  head: ["", "Nome", "Sobrenome", "Participação"],
+  body: [
+    {
+      id: 1,
+      name: "Carlos",
+      lastName: "Moura",
+      participation: "5%",
+    },
+    {
+      id: 2,
+      name: "Fernanda",
+      lastName: "Oliveria",
+      participation: "15%",
+    },
+    {
+      id: 3,
+      name: "Hugo",
+      lastName: "Silva",
+      participation: "20%",
+    },
+    {
+      id: 4,
+      name: "Eliza",
+      lastName: "Souza",
+      paritcipation: "20%",
+    },
+    {
+      id: 5,
+      name: "Anderson",
+      lastName: "Santos",
+      participation: "40%",
+    },
+  ],
+}
 
 export default () => (
   <>
@@ -156,6 +195,18 @@ ut dignissim ligula est at erat."
 
         <ButtonCubo type="submit" className="-light" content="Enviar" />
       </FormCubo>
+    </SectionCubo>
+
+    <SectionCubo className="-data">
+      <HeaderSection
+        title="Dados"
+        subtitle="Dados
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      />
+
+      <div className="container">
+        <TableCubo head={datas.head} body={datas.body} />
+      </div>
     </SectionCubo>
   </>
 )
