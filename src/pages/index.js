@@ -21,8 +21,7 @@ import {
   TextCubo,
   InputCubo,
   FormCubo,
-} from './../objects'
-
+} from "./../objects"
 
 import {
   HeaderCubo,
@@ -67,38 +66,39 @@ const services = [
 ]
 
 const datas = {
-  head : ["", "Nome", "Sobrenome", "Participação"],
-  body: [{
-    id: 1,
-    name: "Carlos",
-    lastName: "Moura",
-    participation: "5%",
-  },
-  {
-    id: 2,
-    name: "Fernanda", 
-    lastName: "Oliveria", 
-    participation: "15%",
-  },
-  {
-    id: 3,
-    name: "Hugo", 
-    lastName: "Silva",
-    participation: "20%",
-  },
-  {
-    id: 4,
-    name: "Eliza",
-    lastName: "Souza",
-    paritcipation: "20%",
-  },
-  {
-    id: 5,
-    name: "Anderson",
-    lastName: "Santos",
-    participation: "40%",
-  },
-]
+  head: ["", "Nome", "Sobrenome", "Participação"],
+  body: [
+    {
+      id: 1,
+      name: "Carlos",
+      lastName: "Moura",
+      participation: "5%",
+    },
+    {
+      id: 2,
+      name: "Fernanda",
+      lastName: "Oliveria",
+      participation: "15%",
+    },
+    {
+      id: 3,
+      name: "Hugo",
+      lastName: "Silva",
+      participation: "20%",
+    },
+    {
+      id: 4,
+      name: "Eliza",
+      lastName: "Souza",
+      paritcipation: "20%",
+    },
+    {
+      id: 5,
+      name: "Anderson",
+      lastName: "Santos",
+      participation: "40%",
+    },
+  ],
 }
 
 export default () => (
@@ -204,7 +204,9 @@ ut dignissim ligula est at erat."
         Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
 
-      <TableCubo head={datas.head} body={datas.body} />
+      <div className="container">
+        <TableCubo head={datas.head} body={datas.body} />
+      </div>
     </SectionCubo>
   </>
 )

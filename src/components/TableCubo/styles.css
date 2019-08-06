@@ -1,0 +1,15 @@
+.table-cubo {
+  color: var(--color-seventh);
+  border: 1px solid var(--color-seventh);
+  border-collapse: collapse;
+  font-size: var(--size-small);
+  text-align: left;
+}
+
+.table-cubo .data {
+  border: 1px solid var(--color-seventh);
+}
+
+.table-cubo .data.-id {
+  text-align: center;
+}
