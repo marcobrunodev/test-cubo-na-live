@@ -13,9 +13,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "gatsby": "^2.13.6",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {

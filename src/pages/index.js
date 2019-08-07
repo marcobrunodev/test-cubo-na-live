@@ -21,6 +21,7 @@ import {
   TextCubo,
   InputCubo,
   FormCubo,
+  ChartDoughnut,
 } from "./../objects"
 
 import {
@@ -34,6 +35,22 @@ import {
   TableCubo,
   FooterCubo,
 } from "../components"
+
+const data = {
+  labels: [
+    "Hugo Silva",
+    "Carlos Moura",
+    "Eliza Souza",
+    "Fernanda Oliveira",
+    "Anderson Santos",
+  ],
+  datasets: [
+    {
+      data: [20, 5, 20, 15, 40],
+      backgroundColor: ["#279be1", "#00bca6", "#8962bf", "#9db5bc", "#cd574c"],
+    },
+  ],
+}
 
 const services = [
   {
@@ -207,6 +224,7 @@ ut dignissim ligula est at erat."
 
       <div className="container">
         <TableCubo head={datas.head} body={datas.body} />
+        <ChartDoughnut data={data} />
       </div>
     </SectionCubo>
 
