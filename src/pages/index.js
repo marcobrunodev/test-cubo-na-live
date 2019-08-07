@@ -21,7 +21,6 @@ import {
   TextCubo,
   InputCubo,
   FormCubo,
-  ChartDoughnut,
 } from "./../objects"
 
 import {
@@ -34,6 +33,7 @@ import {
   ButtonCubo,
   TableCubo,
   FooterCubo,
+  ChartDoughnut,
 } from "../components"
 
 const data = {

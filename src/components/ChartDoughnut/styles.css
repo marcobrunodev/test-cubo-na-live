@@ -1,0 +1,24 @@
+.doughnut {
+  display: flex;
+  align-items: center;
+}
+
+.doughnut > .chart {
+  width: 500px;
+  position: absolute;
+  transform: translateX(-80%);
+}
+
+.doughnut .item {
+  margin-bottom: var(--spacing-small);
+}
+
+.doughnut .color {
+  display: inline-block;
+  background-color: var(--color-base);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-right: var(--spacing-very-small);
+}

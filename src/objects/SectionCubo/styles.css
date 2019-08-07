@@ -109,6 +109,11 @@
   margin-bottom: var(--spacing-very-big);
 }
 
+.section-cubo.-data > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-cubo.-data .table-cubo {
   width: 535px;
 }
